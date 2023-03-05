@@ -61,7 +61,7 @@ For example, I designed the logic to calculate indicators as like **Leading Span
 
 While developing the logic, I applied the `Segment Tree Algorithm`.
 
-As a result, I made a `saving of --% previous processing time` in calculating Leading Span of Ichimoku. (Calculating process is in [here])
+As a result, I made a `saving of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`. (Calculating process is in [here](https://github.com/DevTae/StockDatabasePreview/blob/main/SegmentTreeAlgorithm.md))
 
 <br/>
 
