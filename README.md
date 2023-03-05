@@ -71,7 +71,7 @@ As a result, I made a `saving of --% previous processing time` in calculating Le
 
 Futhermore, I use this datas **to make own buying/selling strategy**.
 
-- Until now, I studied and analyzed so many stocks and price patterns using this program
+- Until now, I have studied and analyzed so many stocks and price patterns using this program
 
 ![stock-analysis-archive](https://user-images.githubusercontent.com/55177359/222942273-c536fc6c-b441-4672-9667-41a61b0d4110.png)
 
