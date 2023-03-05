@@ -96,7 +96,7 @@ Here are many features in 'StockDatabase' projects.
 
 <br/>
 
-- View the chart of search results with auto-analyzing-tool
+- View the chart of searched results with auto-analyzing-tool
 
 ![viewthechart](https://user-images.githubusercontent.com/55177359/222940379-a8a3c1b3-5ab4-4783-9026-75996ae861fa.gif)
 
