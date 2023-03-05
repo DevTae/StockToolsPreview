@@ -7,7 +7,7 @@ This is the repository that summarizes about my own project named 'DevTae/StockD
 
 - Overview
   - First, I have saved about `2367 stocks` and `9,952,847 daily datas` in file-system database from Korea market (KOSPI, KOSDAQ).
-  - Second, I made a `saving of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`. (Calculating process is in [here](https://github.com/DevTae/StockDatabasePreview/blob/main/SegmentTreeAlgorithm.md))
+  - Second, I made a `saving of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`.
   - Third, I use these datas **to make own buying/selling strategy**.
   - Finally, Here are many features in 'StockDatabase' projects.
 
@@ -61,13 +61,28 @@ stock.DailyDatas = DailyData.ReadDailyData(ref stock).dailyDatas; // here is the
 
 <br/>
 
-Second, I use this datas **to calculate indicator datas** in effective way.
+Second, I made a `saving of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`.
 
-For example, I designed the logic to calculate indicators as like **Leading Span of Ichimoku** (In korean, 일목균형표 선행스팬).
+<br/>
+
+There are two ways to get the Maximum and Minimum Value in Specific Range to calculate the Leading Span of Ichimoku *(n : a number of all daily datas contained every stocks)*
+
+  - Calculate the Maximum and Minimum value using the `Linear way`
+    - Whenever the index is changed, try to get a maximum and minimum value `calculating every 52 elements`
+    - It would be needed the time `Θ(52 * n)` to calculate all stocks
+  
+  - Calculate the Maximum and Minimum value using the `Segment Tree Algorithm`
+    - Before calculating, **make a Segment Tree**
+    - Whenever the index is changed, try to get a maximum and minimum value `using Segment Tree`
+    - It would be needed the time `Θ(log(52) * n)` to calculate all stocks
+
+<br/>
 
 While developing the logic, I applied the `Segment Tree Algorithm`.
 
-As a result, I made a `saving of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`. (Calculating process is in [here](https://github.com/DevTae/StockDatabasePreview/blob/main/SegmentTreeAlgorithm.md))
+As a result, I made a `saving of 72% previous processing time` about `a data set of 10 million`. (You could see the detailed process in [here](https://github.com/DevTae/StockDatabasePreview/blob/main/SegmentTreeAlgorithm.md))
+
+![result_capture](https://user-images.githubusercontent.com/55177359/222949478-7207a194-ed74-4f76-9d83-62f5a7e43ca6.png)
 
 <br/>
 
