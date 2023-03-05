@@ -53,8 +53,8 @@ leadingSpan2[index] = (shiftedHighestInLong + shiftedLowestInLong) / 2;
 
 - **Result of Difference** between the `Linear way` and `Segment Tree Algorithm`
   - Test the calculating LeadingSpan indicators from `2367 stocks` and `9,952,847 daily datas`
-  - A time of calculating in **Linear way** needed `258761 ms`
-  - A time of calculating using **Segment Tree Algorithm** needed `73335 ms`
+  - A needed time of calculating in **Linear way** is `258761 ms`
+  - A needed time of calculating using **Segment Tree Algorithm** is `73335 ms`
   - Make a `Saving of 72% processing time` in calculating Leading Span of Ichimoku by using the `Segment Tree Algorithm`
 
 ![result_capture](https://user-images.githubusercontent.com/55177359/222949478-7207a194-ed74-4f76-9d83-62f5a7e43ca6.png)
