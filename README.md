@@ -35,7 +35,7 @@ It is easy to use like below codes :
 // How to download the new stock daily datas from Kiwoom OpenAPI
 int i = 0; // want to see in specific index number
 Stock[] stocks = KwGetStockList().stocks; // user-defined function (except Ritz, ETF, ETN, Spac)
-stocks[i].DailyDatas = KwGetDailyData(stock, null); // user-defined inner asynchronous function
+stocks[i].DailyDatas = KwGetDailyData(stocks[i], null); // user-defined inner asynchronous function
 ```
 
 ```C#
