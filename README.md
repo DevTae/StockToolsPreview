@@ -5,9 +5,15 @@
 
 This is the repository that summarizes about my own project named 'DevTae/StockDatabase'
 
+- Overview
+  - First, I have saved about `2367 stocks` and `9,952,847 daily datas` in file-system database from Korea market (KOSPI, KOSDAQ).
+  - Second, I made a `saving of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`. (Calculating process is in [here](https://github.com/DevTae/StockDatabasePreview/blob/main/SegmentTreeAlgorithm.md))
+  - Third, I use these datas **to make own buying/selling strategy**.
+  - Finally, Here are many features in 'StockDatabase' projects.
+
 -----
 
-I have saved about `2367 stocks` and `9,952,847 daily datas` in file-system database from Korea market (KOSPI, KOSDAQ) on 2023/02/17.
+First, I have saved about `2367 stocks` and `9,952,847 daily datas` in file-system database from Korea market (KOSPI, KOSDAQ) on 2023/02/17.
 
 There are so many informations as like Stock Price, Volume, Adjusted Stock Price, MarketCap in only one daily data.
 
@@ -55,7 +61,7 @@ stock.DailyDatas = DailyData.ReadDailyData(ref stock).dailyDatas; // here is the
 
 <br/>
 
-Also, I use this datas **to calculate indicator datas**.
+Second, I use this datas **to calculate indicator datas** in effective way.
 
 For example, I designed the logic to calculate indicators as like **Leading Span of Ichimoku** (In korean, 일목균형표 선행스팬).
 
@@ -69,7 +75,7 @@ As a result, I made a `saving of 72% previous processing time` in calculating Le
 
 <br/>
 
-Futhermore, I use this datas **to make own buying/selling strategy**.
+Third, I use these datas **to make own buying/selling strategy**.
 
 - Until now, I have studied and analyzed so many stocks and price patterns using this program
 
@@ -81,7 +87,7 @@ Futhermore, I use this datas **to make own buying/selling strategy**.
 
 <br/>
 
-Here are many features in 'StockDatabase' projects.
+Finally, Here are many features in 'StockDatabase' projects.
 
 
 - Save and Update the daily datas automatically
