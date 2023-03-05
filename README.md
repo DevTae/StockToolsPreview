@@ -90,7 +90,7 @@ Here are many features in 'StockDatabase' projects.
 
 <br/>
 
-- Backtest the custom buying/selling strategy
+- Backtest using the custom buying/selling strategy
 
 ![backtest](https://user-images.githubusercontent.com/55177359/222940351-1cef5cac-c554-4c6e-b07d-32591530f29f.gif)
 
