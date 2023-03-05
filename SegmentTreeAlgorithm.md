@@ -34,16 +34,16 @@ leadingSpan2[index] = (shiftedHighestInLong + shiftedLowestInLong) / 2;
 
 <br/>
 
-- Two ways to Calculate the Maximum and Minimum Value in Specific Range *(n : a number of daily datas, m : a number of stocks)*
+- Two ways to Calculate the Maximum and Minimum Value in Specific Range *(n : a number of all daily datas contained every stocks)*
 
   - Calculate the Maximum and Minimum value using the `Linear way`
     - Whenever the index is changed, try to get a maximum and minimum value `calculating every 52 elements`
-    - It would be needed the time `Θ(52 * n * m)` to calculate all stocks
+    - It would be needed the time `Θ(52 * n)` to calculate all stocks
   
   - Calculate the Maximum and Minimum value using the `Segment Tree Algorithm`
     - Before calculating, **make a Segment Tree**
     - Whenever the index is changed, try to get a maximum and minimum value `using Segment Tree`
-    - It would be needed the time `Θ(log(52) * n * m)` to calculate all stocks
+    - It would be needed the time `Θ(log(52) * n)` to calculate all stocks
 
 <br/>
 
