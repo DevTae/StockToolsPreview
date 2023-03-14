@@ -134,6 +134,20 @@ Finally, Here are many features in 'StockDatabase' projects.
 
 <br/>
 
+**\<Information about Source Distribution\>**
+
+- The source code of this project is saved on private repository, because **I worried about the misusing this project to their buying / selling strategy**.
+
+- Whenever if you have any question for this project, contact me anything using email.
+  - e-mail is here. → dev.taehyeon.kim@gmail.com
+
+<br/>
+
+-----
+
+<br/>
+
 The End.
 
 Thank you for reading!
+
