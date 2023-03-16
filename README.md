@@ -26,7 +26,7 @@ There are so many informations as like `Stock Price`, `Volume`, `Adjusted Stock 
 
 <br/>
 
-- Example codes is [here](https://github.com/DevTae/StockDatabasePreview/blob/main/DownloadDailyDatas.md)
+- Example code is [here](https://github.com/DevTae/StockDatabasePreview/blob/main/DownloadDailyDatas.md)
 
 <br/>
 
