@@ -7,53 +7,26 @@ This is the repository that summarizes about my own project named 'DevTae/StockD
 
 - Overview
   - First, I have saved about `2367 stocks` and `9,952,847 daily datas` in file-system database from Korea market (KOSPI, KOSDAQ).
-  - Second, I made a `saving of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`.
-  - Third, I use these datas **to make own buying/selling strategy**.
+  - Second, I applied `the asynchronous method` on downloading stock datas from Kiwoom OpenAPI and Naver Finance
+  - Thrid, I made a `saving of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`.
+  - Fourth, I used these datas **to make own buying/selling strategy**.
   - Finally, Here are many features in 'StockDatabase' projects.
 
 -----
 
 First, I have saved about `2367 stocks` and `9,952,847 daily datas` in file-system database from Korea market (KOSPI, KOSDAQ) on 2023/02/17.
 
-There are so many informations as like Stock Price, Volume, Adjusted Stock Price, MarketCap in only one daily data.
-
-This below process is how to get daily datas.
-
-1. Download the current list of korean stocks
-2. Check the daily datas need the update or not (Price Update, Adjusting Stock Price, and so on)
-3. If needed, Get the datas from Kiwoom Open API and Naver Finance
-4. Save the datas in form of daily datas in file-system database
-
-I make it to download datas `using asynchronous function` because of download time limit in Kiwoom OpenAPI.
+There are so many informations as like `Stock Price`, `Volume`, `Adjusted Stock Price`, `MarketCap` in only one daily data.
 
 <br/>
 
-It is easy to use like below codes :
-(this is preview)
-
-```C#
-// How to download the new stock daily datas from Kiwoom OpenAPI
-int i = 0; // want to see in specific index number
-Stock[] stocks = KwGetStockList().stocks; // user-defined function (except Ritz, ETF, ETN, Spac)
-stocks[i].DailyDatas = KwGetDailyData(stocks[i], null); // user-defined inner asynchronous function
-```
-
-```C#
-// How to load all stocks in once
-int i = 0; // want to see in specific index number
-Stock[] stocks = Stock.ReadListFile("한국주식(키움)");
-```
-
-```C#
-// How to load the stock daily datas named "삼성전자"
-Market market = new Market("0", "한국주식(키움)", "0", "코스피");
-Stock stock = new Stock(new StockInfo(ref market, "005930", "삼성전자"), null);
-stock.DailyDatas = DailyData.ReadDailyData(ref stock).dailyDatas; // here is the daily datas
-```
-
-- This is the overview of my class files and file-system database
+- This is the overview of class files and file-system database
 
 ![preview2](https://user-images.githubusercontent.com/55177359/211186525-b162f5e3-0e1a-40c0-af47-057d6e3afd78.png)
+
+<br/>
+
+- Example codes is [here](https://github.com/DevTae/StockDatabasePreview/blob/main/DownloadDailyDatas.md)
 
 <br/>
 
@@ -61,7 +34,25 @@ stock.DailyDatas = DailyData.ReadDailyData(ref stock).dailyDatas; // here is the
 
 <br/>
 
-Second, I made a `saving of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`.
+Second, I applied `the asynchronous method` on downloading stock datas from Kiwoom OpenAPI and Naver Finance
+
+<br/>
+
+- I make it to download datas `using asynchronous function` because of the download limit in Kiwoom OpenAPI.
+
+  - **Calling Kiwoom API** is very comfort to save all stock datas `including the information adjusting stock price event`
+  - But, **Calling Kiwoom API** could be possible `only 1000 times in 1 hour` because of their API limit rule *(too slow)*
+  - In contrast, **Naver Finance Crawling** does *not have any restriction* on downloading *sise* datas [as like this link](https://finance.naver.com/robots.txt)
+  - But, **Naver Finance** does `not have any information about the adjusting stock price event` in *sise* datas
+  - Finally, I decided to use **both Kiwoom API and Naver Finance** to `improve the download speed` and `get the information of the adjusting stock price event`
+
+<br/>
+
+-----
+
+<br/>
+
+Third, I made a `saving of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`.
 
 <br/>
 
@@ -90,7 +81,9 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 <br/>
 
-Third, I use these datas **to make own buying/selling strategy**.
+Fourth, I used these datas **to make own buying/selling strategy**.
+
+- It could totally possible to **analyze the price patterns of stock** using this program with backtesting results.
 
 - Until now, I have studied and analyzed so many stocks and price patterns using this program
 
@@ -105,19 +98,19 @@ Third, I use these datas **to make own buying/selling strategy**.
 Finally, Here are many features in 'StockDatabase' projects.
 
 
-- Save and Update the daily datas automatically
+- Update the daily datas automatically *from Kiwoom API and Naver Finance*
 
 ![updatedailydata](https://user-images.githubusercontent.com/55177359/222940109-4bb442aa-9ebb-429b-a3f5-9500225dcd30.gif)
 
 <br/>
 
-- Backtest using the custom buying/selling strategy
+- Backtesting Simulation with the custom buying/selling strategy
 
 ![backtest](https://user-images.githubusercontent.com/55177359/222940351-1cef5cac-c554-4c6e-b07d-32591530f29f.gif)
 
 <br/>
 
-- View the chart of searched results with auto-analyzing-tool
+- View the chart of searched backtesting results *with auto-analyzing-tool*
 
 ![viewthechart](https://user-images.githubusercontent.com/55177359/222940379-a8a3c1b3-5ab4-4783-9026-75996ae861fa.gif)
 
@@ -138,7 +131,7 @@ Finally, Here are many features in 'StockDatabase' projects.
 
 - The source code of this project is saved on private repository, because **I worried about the misusing this project to their buying / selling strategy**.
 
-- Whenever if you have any question for this project, contact me anything using email.
+- Whenever if you have any questions for this project, contact me for anything using email.
   - e-mail is here. → dev.taehyeon.kim@gmail.com
 
 <br/>
