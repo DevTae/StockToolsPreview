@@ -83,7 +83,7 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 Fourth, I used these datas **to make own buying/selling strategy**.
 
-- It could totally possible to **analyze the price patterns of stock** using this program with backtesting results.
+- It could be totally possible to **analyze the price patterns of stock** using this program with backtesting results.
 
 - Until now, I have studied and analyzed so many stocks and price patterns using this program
 
