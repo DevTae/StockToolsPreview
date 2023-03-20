@@ -4,12 +4,12 @@
 
 <br/>
 
-This below process is how to get daily datas.
+This below process is `how to get daily datas` :
 
-1. Download the current list of korean stocks
-2. Check the daily datas need the update or not (Price Update, Adjusting Stock Price, and so on)
-3. If needed, Get the datas from Kiwoom Open API and Naver Finance
-4. Save the datas in form of daily datas in file-system database
+1. Download `the current list` of korean stocks
+2. Check that the daily datas `need to update or not` (Price Update, Adjusting Stock Price, and so on)
+3. If needed, Get the datas from `Kiwoom Open API and Naver Finance`
+4. Save the datas in form of daily datas `in file-system database`
 
 <br/>
 
