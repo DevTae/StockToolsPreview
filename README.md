@@ -6,17 +6,22 @@
 This is the repository that summarizes about my own project named 'DevTae/StockDatabase'
 
 - Overview
-  - First, I have saved about `2367 stocks` and `9,952,847 daily datas` in file-system database from Korea market (KOSPI, KOSDAQ).
-  - Second, I applied `the asynchronous method` on downloading stock datas from Kiwoom OpenAPI and Naver Finance
-  - Thrid, I made a `saving of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`.
-  - Fourth, I used these datas **to make own buying/selling strategy**.
-  - Finally, Here are many features in 'StockDatabase' projects.
+  - [Save about `2367 stocks` and `9,952,847 daily datas` in File-System database](#save-about-2367-stocks-and-9952847-daily-datas-in-file-system-database)
+  - [Apply `the asynchronous method` on downloading stock datas from Kiwoom OpenAPI and Naver Finance](#apply-the-asynchronous-method-on-downloading-stock-datas-from-kiwoom-openapi-and-naver-finance)
+  - [`Save of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`](#save-of-72-previous-processing-time-in-calculating-leading-span-of-ichimoku-about-a-data-set-of-10-million)
+  - [Use these datas **to make own buying/selling strategy**](#use-these-datas-to-make-own-buyingselling-strategy)
+
+- [Features in 'StockDatabase' Project](#features-in-stockdatabase-project)
+
+<br/>
 
 -----
 
-First, I have saved about `2367 stocks` and `9,952,847 daily datas` in file-system database from Korea market (KOSPI, KOSDAQ) on 2023/02/17.
+### Save about `2367 stocks` and `9,952,847 daily datas` in File-System database
 
-There are so many informations as like `Stock Price`, `Volume`, `Adjusted Stock Price`, `MarketCap` in only one daily data.
+- First, I have saved about **a lot of stock datas** in File-System database from Korea market (KOSPI, KOSDAQ) on 2023/02/17.
+
+- There are so many informations as like `Stock Price`, `Volume`, `Adjusted Stock Price`, `MarketCap` in only one daily data.
 
 <br/>
 
@@ -34,19 +39,17 @@ There are so many informations as like `Stock Price`, `Volume`, `Adjusted Stock 
 
 <br/>
 
-Second, I applied `the asynchronous method` on downloading stock datas from Kiwoom OpenAPI and Naver Finance
-
-<br/>
+### Apply `the asynchronous method` on downloading stock datas from Kiwoom OpenAPI and Naver Finance
 
 - I make it to download datas `using asynchronous function` because of the download limit in Kiwoom OpenAPI.
 
-  - **Calling Kiwoom API** is very comfort to save all stock datas `including the information adjusting stock price event`
-  - But, **Calling Kiwoom API** could be possible `only 1000 times in 1 hour` because of their API limit rule *(too slow)*
-  - In contrast, **Naver Finance Crawling** does *not have any restriction* on downloading *sise* datas [as like this link](https://finance.naver.com/robots.txt)
-  - But, **Naver Finance** does `not have any information about the adjusting stock price event` in *sise* datas
+  - **Calling Kiwoom API** could download the data of the `adjusting stock price event`, however, there is API limit rule that could download `only 1000 times in 1 hour` *(too slow)*
+  
+  - **Naver Finance Crawling** does *not have any restriction* on downloading *sise* datas [as like this link](https://finance.naver.com/robots.txt), however, there is `not any information about the adjusting stock price event` in *sise* datas
+  
   - Finally, I decided to use **both Kiwoom API and Naver Finance** to `improve the download speed` and `get the information of the adjusting stock price event`
 
-- You could see briefly how to process at **bottom pictures** that show features of the running program
+- You could see the running program briefly how to process [at bottom pictures](#features-in-stockdatabase-project)
 
 <br/>
 
@@ -54,9 +57,7 @@ Second, I applied `the asynchronous method` on downloading stock datas from Kiwo
 
 <br/>
 
-Third, I made a `saving of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`.
-
-<br/>
+### `Save of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`
 
 There are two ways to get the Maximum and Minimum Value in Specific Range to calculate the Leading Span of Ichimoku *(n : a number of all daily datas contained every stocks)*
 
@@ -81,9 +82,7 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 -----
 
-<br/>
-
-Fourth, I used these datas **to make own buying/selling strategy**.
+### Use these datas **to make own buying/selling strategy**
 
 - It could be totally possible to **analyze the price patterns of stock** using this program with backtesting results.
 
@@ -95,10 +94,7 @@ Fourth, I used these datas **to make own buying/selling strategy**.
 
 -----
 
-<br/>
-
-Finally, Here are many features in 'StockDatabase' projects.
-
+## Features in 'StockDatabase' Project
 
 - Update the daily datas automatically *from Kiwoom API and Naver Finance*
 
@@ -106,19 +102,18 @@ Finally, Here are many features in 'StockDatabase' projects.
 
 <br/>
 
-- Backtesting Simulation with the custom buying/selling strategy
+- Backtest Simulation with the custom buying/selling strategy
 
 ![backtest](https://user-images.githubusercontent.com/55177359/222940351-1cef5cac-c554-4c6e-b07d-32591530f29f.gif)
 
 <br/>
 
-- View the chart of searched backtesting results *with auto-analyzing-tool*
+- View the chart of searched backtesting results *with many indicators*
 
 ![viewthechart](https://user-images.githubusercontent.com/55177359/222940379-a8a3c1b3-5ab4-4783-9026-75996ae861fa.gif)
 
 <br/>
 
-- Calculate the `Linear Regression Model` using the `Least Square Method`
 - Analyze the rank of the theme and sector
 
 ![linearregression](https://user-images.githubusercontent.com/55177359/222940238-4b564d53-d80b-4bbd-a042-f160636f30b7.png)
@@ -127,9 +122,7 @@ Finally, Here are many features in 'StockDatabase' projects.
 
 -----
 
-<br/>
-
-**\<Information about Source Distribution\>**
+### Information about Source Distribution
 
 - The source code of this project is saved on private repository, because **I worried about the misusing this project to their buying / selling strategy**.
 
@@ -140,9 +133,7 @@ Finally, Here are many features in 'StockDatabase' projects.
 
 -----
 
-<br/>
-
-The End.
+### The End
 
 Thank you for reading!
 
