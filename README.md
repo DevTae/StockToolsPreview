@@ -46,7 +46,7 @@ Second, I applied `the asynchronous method` on downloading stock datas from Kiwo
   - But, **Naver Finance** does `not have any information about the adjusting stock price event` in *sise* datas
   - Finally, I decided to use **both Kiwoom API and Naver Finance** to `improve the download speed` and `get the information of the adjusting stock price event`
 
-- You could see briefly how to process at **below pictures** that show features of the running program
+- You could see briefly how to process at **bottom pictures** that show features of the running program
 
 <br/>
 
