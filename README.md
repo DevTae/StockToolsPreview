@@ -46,6 +46,8 @@ Second, I applied `the asynchronous method` on downloading stock datas from Kiwo
   - But, **Naver Finance** does `not have any information about the adjusting stock price event` in *sise* datas
   - Finally, I decided to use **both Kiwoom API and Naver Finance** to `improve the download speed` and `get the information of the adjusting stock price event`
 
+- You could see briefly how to process at **below pictures** that show features of the running program
+
 <br/>
 
 -----
@@ -71,7 +73,7 @@ There are two ways to get the Maximum and Minimum Value in Specific Range to cal
 
 While developing the logic, I applied the `Segment Tree Algorithm`.
 
-As a result, I made a `saving of 72% previous processing time` about `a data set of 10 million`. (You could see the detailed process in [here](https://github.com/DevTae/StockDatabasePreview/blob/main/SegmentTreeAlgorithm.md))
+As a result, I made a `saving of 72% previous processing time` about `a data set of 10 million`. (You could see the detailed process [in here](https://github.com/DevTae/StockDatabasePreview/blob/main/SegmentTreeAlgorithm.md))
 
 ![result_capture](https://user-images.githubusercontent.com/55177359/222949478-7207a194-ed74-4f76-9d83-62f5a7e43ca6.png)
 
