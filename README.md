@@ -6,10 +6,10 @@
 This is the repository that summarizes about my own project named 'DevTae/StockDatabase'
 
 - Overview
-  - [Saved about `2367 stocks` and `9,952,847 daily datas` in File-System database](#saved-about-2367-stocks-and-9952847-daily-datas-in-file-system-database)
-  - [Applied `the asynchronous method` on downloading stock datas from Kiwoom OpenAPI and Naver Finance](#applied-the-asynchronous-method-on-downloading-stock-datas-from-kiwoom-openapi-and-naver-finance)
-  - [`Saved of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`](#saved-of-72-previous-processing-time-in-calculating-leading-span-of-ichimoku-about-a-data-set-of-10-million)
-  - [Used these datas **to make own buying/selling strategy**](#used-these-datas-to-make-own-buyingselling-strategy)
+  - [Saving about `2367 stocks` and `9,952,847 daily datas` in File-System database](#saved-about-2367-stocks-and-9952847-daily-datas-in-file-system-database)
+  - [Adopting `the asynchronous method` on downloading stock datas from Kiwoom OpenAPI and Naver Finance](#adopting-the-asynchronous-method-on-downloading-stock-datas-from-kiwoom-openapi-and-naver-finance)
+  - [`Saving of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`](#saving-of-72-previous-processing-time-in-calculating-leading-span-of-ichimoku-about-a-data-set-of-10-million)
+  - [Using these datas **to make own buying/selling strategy**](#using-these-datas-to-make-own-buyingselling-strategy)
 
 - [Features in 'StockDatabase' Project](#features-in-stockdatabase-project)
 
@@ -17,7 +17,7 @@ This is the repository that summarizes about my own project named 'DevTae/StockD
 
 -----
 
-### Saved about `2367 stocks` and `9,952,847 daily datas` in File-System database
+### Saving about `2367 stocks` and `9,952,847 daily datas` in File-System database
 
 - First, I have saved about **a lot of stock datas** in File-System database from Korea market (KOSPI, KOSDAQ) on 2023/02/17.
 
@@ -39,7 +39,7 @@ This is the repository that summarizes about my own project named 'DevTae/StockD
 
 <br/>
 
-### Applied `the asynchronous method` on downloading stock datas from Kiwoom OpenAPI and Naver Finance
+### Adopting `the asynchronous method` on downloading stock datas from Kiwoom OpenAPI and Naver Finance
 
 - I make it to download datas `using asynchronous function` because of the download limit in Kiwoom OpenAPI.
 
@@ -57,7 +57,7 @@ This is the repository that summarizes about my own project named 'DevTae/StockD
 
 <br/>
 
-### `Saved of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`
+### `Saving of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`
 
 There are two ways to get the Maximum and Minimum Value in Specific Range to calculate the Leading Span of Ichimoku *(n : a number of all daily datas contained every stocks)*
 
@@ -82,7 +82,7 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 -----
 
-### Used these datas **to make own buying/selling strategy**
+### Using these datas **to make own buying/selling strategy**
 
 - It could be totally possible to **analyze the price patterns of stock** using this program with backtesting results.
 
@@ -102,19 +102,19 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 <br/>
 
-- Backtest Simulation with the custom buying/selling strategy
+- Backtesting Simulation with the custom buying/selling strategy
 
 ![backtest](https://user-images.githubusercontent.com/55177359/222940351-1cef5cac-c554-4c6e-b07d-32591530f29f.gif)
 
 <br/>
 
-- View the chart of searched backtesting results *with many indicators*
+- Showing the chart of searched backtesting results *with many indicators*
 
 ![viewthechart](https://user-images.githubusercontent.com/55177359/222940379-a8a3c1b3-5ab4-4783-9026-75996ae861fa.gif)
 
 <br/>
 
-- Analyze the rank of the theme and sector
+- Analyzing the rank of the theme and sector
 
 ![linearregression](https://user-images.githubusercontent.com/55177359/222940238-4b564d53-d80b-4bbd-a042-f160636f30b7.png)
 
