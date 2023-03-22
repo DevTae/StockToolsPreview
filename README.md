@@ -6,10 +6,10 @@
 This is the repository that summarizes about my own project named 'DevTae/StockDatabase'
 
 - Overview
-  - [Save about `2367 stocks` and `9,952,847 daily datas` in File-System database](#save-about-2367-stocks-and-9952847-daily-datas-in-file-system-database)
-  - [Apply `the asynchronous method` on downloading stock datas from Kiwoom OpenAPI and Naver Finance](#apply-the-asynchronous-method-on-downloading-stock-datas-from-kiwoom-openapi-and-naver-finance)
-  - [`Save of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`](#save-of-72-previous-processing-time-in-calculating-leading-span-of-ichimoku-about-a-data-set-of-10-million)
-  - [Use these datas **to make own buying/selling strategy**](#use-these-datas-to-make-own-buyingselling-strategy)
+  - [Saved about `2367 stocks` and `9,952,847 daily datas` in File-System database](#saved-about-2367-stocks-and-9952847-daily-datas-in-file-system-database)
+  - [Applied `the asynchronous method` on downloading stock datas from Kiwoom OpenAPI and Naver Finance](#applied-the-asynchronous-method-on-downloading-stock-datas-from-kiwoom-openapi-and-naver-finance)
+  - [`Saved of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`](#saved-of-72-previous-processing-time-in-calculating-leading-span-of-ichimoku-about-a-data-set-of-10-million)
+  - [Used these datas **to make own buying/selling strategy**](#used-these-datas-to-make-own-buyingselling-strategy)
 
 - [Features in 'StockDatabase' Project](#features-in-stockdatabase-project)
 
@@ -17,7 +17,7 @@ This is the repository that summarizes about my own project named 'DevTae/StockD
 
 -----
 
-### Save about `2367 stocks` and `9,952,847 daily datas` in File-System database
+### Saved about `2367 stocks` and `9,952,847 daily datas` in File-System database
 
 - First, I have saved about **a lot of stock datas** in File-System database from Korea market (KOSPI, KOSDAQ) on 2023/02/17.
 
@@ -39,7 +39,7 @@ This is the repository that summarizes about my own project named 'DevTae/StockD
 
 <br/>
 
-### Apply `the asynchronous method` on downloading stock datas from Kiwoom OpenAPI and Naver Finance
+### Applied `the asynchronous method` on downloading stock datas from Kiwoom OpenAPI and Naver Finance
 
 - I make it to download datas `using asynchronous function` because of the download limit in Kiwoom OpenAPI.
 
@@ -57,7 +57,7 @@ This is the repository that summarizes about my own project named 'DevTae/StockD
 
 <br/>
 
-### `Save of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`
+### `Saved of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`
 
 There are two ways to get the Maximum and Minimum Value in Specific Range to calculate the Leading Span of Ichimoku *(n : a number of all daily datas contained every stocks)*
 
@@ -82,7 +82,7 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 -----
 
-### Use these datas **to make own buying/selling strategy**
+### Used these datas **to make own buying/selling strategy**
 
 - It could be totally possible to **analyze the price patterns of stock** using this program with backtesting results.
 
