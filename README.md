@@ -6,7 +6,7 @@
 This is the repository that summarizes about my own project named 'DevTae/StockDatabase'
 
 - Overview
-  - [Saving about `2367 stocks` and `9,952,847 daily datas` in File-System database](#saved-about-2367-stocks-and-9952847-daily-datas-in-file-system-database)
+  - [Saving about `2367 stocks` and `9,952,847 daily datas` in File-System database](#saving-about-2367-stocks-and-9952847-daily-datas-in-file-system-database)
   - [Adopting `the asynchronous method` on downloading stock datas from Kiwoom OpenAPI and Naver Finance](#adopting-the-asynchronous-method-on-downloading-stock-datas-from-kiwoom-openapi-and-naver-finance)
   - [`Saving of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`](#saving-of-72-previous-processing-time-in-calculating-leading-span-of-ichimoku-about-a-data-set-of-10-million)
   - [Using these datas **to make own buying/selling strategy**](#using-these-datas-to-make-own-buyingselling-strategy)
