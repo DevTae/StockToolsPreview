@@ -66,7 +66,7 @@ There are two ways to get the Maximum and Minimum Value in Specific Range to cal
     - It would be needed the time `Θ(52 * n)` to calculate all daily datas on each stock
   
   - Calculate the Maximum and Minimum value using the `Segment Tree Algorithm`
-    - Before calculating, **make a Segment Tree**
+    - Before calculating, **make a Segment Tree** *(it needs `Θ(n * log(n))`)*
     - Whenever the index is changed, try to get a maximum and minimum value `using Segment Tree`
     - It would be needed the time `Θ(log(n) * n)` to calculate all daily datas on each stock
     
