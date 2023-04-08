@@ -120,12 +120,6 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 <br/>
 
-- Analyzing the rank of the theme and sector
-
-![linearregression](https://user-images.githubusercontent.com/55177359/222940238-4b564d53-d80b-4bbd-a042-f160636f30b7.png)
-
-<br/>
-
 -----
 
 ### Information about Source Distribution
