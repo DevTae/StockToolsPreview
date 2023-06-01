@@ -108,13 +108,13 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 <br/>
 
-- Backtesting Simulation with the custom buying/selling strategy
+- Backtesting Simulation with the custom buying/selling strategy (additional)
 
 ![backtest](https://user-images.githubusercontent.com/55177359/222940351-1cef5cac-c554-4c6e-b07d-32591530f29f.gif)
 
 <br/>
 
-- Showing the chart of searched backtesting results *with many indicators*
+- Showing the chart of searched backtesting results *with many indicators* (additional)
 
 ![viewthechart](https://user-images.githubusercontent.com/55177359/222940379-a8a3c1b3-5ab4-4783-9026-75996ae861fa.gif)
 
