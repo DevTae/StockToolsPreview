@@ -23,6 +23,44 @@ This is the repository that summarizes about my own project named 'DevTae/StockD
 
 - There are so many informations as like `Stock Price`, `Volume`, `Adjusted Stock Price`, `MarketCap` in only one daily data.
 
+- Below this, that is the structure of my class files.
+
+```
+📦Stock
+ ┣ 📂StockInfo             // 종목에 대한 정보가 담겨 있음.
+ ┃ ┣ 📂Market
+ ┃ ┃ ┣ 📜Country           // ex. "한국주식(키움)", ...
+ ┃ ┃ ┣ 📜Code              // ex. 0, 1, 2, ...
+ ┃ ┃ ┣ 📜Name              // ex. "코스피", "코스닥", ...
+ ┃ ┃ ┗ 📜Index             // Static Variable 에 있는 Country 배열의 Index
+ ┃ ┣ 📜Code                // ex. "005930"
+ ┃ ┣ 📜Name                // ex. "삼성전자"
+ ┃ ┣ 📜DebutedDate         // ex. "20190301" (상장일)
+ ┃ ┗ 📜ActiveSharesRatio   // ex. 60.5 (유통비율)
+ ┣ 📂PriceData
+ ┃ ┣ 📂DailyData
+ ┃ ┃ ┣ 📜Date
+ ┃ ┃ ┣ 📜Open              // 시가
+ ┃ ┃ ┣ 📜AdjustedOpen      // 시가 수정주가
+ ┃ ┃ ┣ 📜High              // 고가
+ ┃ ┃ ┣ 📜AdjustedHigh      // 고가 수정주가
+ ┃ ┃ ┣ 📜Low               // 저가
+ ┃ ┃ ┣ 📜AdjustedLow       // 저가 수정주가
+ ┃ ┃ ┣ 📜Close             // 종가
+ ┃ ┃ ┣ 📜AdjustedClose     // 종가 수정주가
+ ┃ ┃ ┣ 📜Volume            // 거래량
+ ┃ ┃ ┣ 📜AdjustedVolume    // 수정 거래량
+ ┃ ┃ ┣ 📜Shares            // 상장 주식 수
+ ┃ ┃ ┣ 📜MarketCap         // 시가총액
+ ┃ ┃ ┣ 📜AdjustedEvent     // 수정주가 이벤트 발생 코드 (in Kiwoom API docs)
+ ┃ ┃ ┣ 📜AdjustedRatio     // 수정주가 변동 비율
+ ┃ ┃ ┗ 📜CheckAdjusted     // 수정주가 변동 여부 확인 column
+ ┃ ┗ 📂WeeklyData
+ ┣ 📜LastUpdatedDate       // 마지막 업데이트 날짜
+ ┣ 📜LastAdjustedDate      // 마지막 수정주가 변동 날짜
+ ┗ 📜LastAdjustedIndex     // 마지막 수정주가 변동 index
+```
+
 <br/>
 
 - This is the overview of class files and file-system database
