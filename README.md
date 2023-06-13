@@ -162,6 +162,8 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 ### Information about Source Distribution
 
+- The source code of this project is saved on private repository, because **I worried about the misusing some strategies in this project to their buying / selling decision**.
+
 - Whenever if you have any questions for this project, contact me for anything using email.
   - e-mail is here. → dev.taehyeon.kim@gmail.com
 
