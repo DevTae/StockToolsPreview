@@ -77,15 +77,15 @@ This is the repository that summarizes about my own project named 'DevTae/StockD
 
 <br/>
 
-### Adopting `the asynchronous method` on downloading stock datas from Kiwoom OpenAPI and Naver Finance
+### Adopting `the asynchronous method` on loading stock datas from Kiwoom OpenAPI and Naver Finance
 
 - I make it to download datas `using asynchronous function` because of the download limit in Kiwoom OpenAPI.
 
   - **Calling Kiwoom API** could download the data of the `adjusting stock price event`, however, there is API limit rule that could download `only 1000 times in 1 hour` *(too slow)*
   
-  - **Naver Finance Crawling** does *not have any restriction* on downloading *sise* datas [as like this link](https://finance.naver.com/robots.txt), however, there is `not any information about the adjusting stock price event` in *sise* datas
+  - **Naver Finance Scraping** does *not have any restriction* on loading *sise* datas [as like this link](https://finance.naver.com/robots.txt), however, there is `not any information about the adjusting stock price event` in *sise* datas
   
-  - Finally, I decided to use **both Kiwoom API and Naver Finance** to `improve the download speed` and `get the information of the adjusting stock price event`
+  - Finally, I decided to use **both Kiwoom API and Naver Finance** to `improve the loading speed` and `get the information of the adjusting stock price event`
 
 - You could see the running program briefly how to process [at bottom pictures](#features-in-stockdatabase-project)
 
