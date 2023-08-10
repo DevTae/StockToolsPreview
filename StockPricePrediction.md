@@ -6,7 +6,7 @@
 
 #### 진행사항
   - 주가 데이터 수집과 전처리 및 metadata 형식으로 정리 진행
-  - 주가 분석 모델 툴킷 제작 및 모델 설계 진행
+  - 주가 분석 모델 툴킷 제작 및 모델 설계 (CNN + RNN 기반) 진행
   - 하이퍼 파라미터 설정 및 학습 진행
 
 <br/>
@@ -36,3 +36,12 @@
   - 현재, Time Domain 에 있어서 기본적으로 제안하는 증강 기법은 Window cropping or slicing, Window warping, Flipping, Noise injection, Label expansion 정도가 있다. 나에게 적합한 방식은 Noise Injection 가 될 것 같다. 노이즈로는 gaussian noise, spike, step-like trend, and slope-like trend 정도가 있다고 한다. 최종적으로 gaussian noise 를 적용할 예정이다.
 
 <br/>
+
+### 2023.8.10
+
+#### EDA 접근
+![23 8 10 데이터 불균형 해소를 위한 수식 적용](https://github.com/DevTae/StockDatabasePreview/assets/55177359/593d553d-d40e-4168-bb26-716d4cf692a5)
+- 결과층 데이터가 특정 구간에 몰려 있는 것을 확인 / 이러한 부분이 데이터 불균형을 뜻하고 학습 평가 검증이 다소 어려워질 수 있음
+- 따라서, 결과값 확대 및 축소 함수(특정 공식)를 적용하여 다음과 같이 **정규 분포 형태의 데이터 분포**로 구성할 수 있었다.
+- 이전의 문제점을 해결할 수 있어 당장에는 Data Augmentation 을 적용하지 않고 학습을 진행하고자 한다.
+- 데이터 수는 약 160만 개로 충분히 커버가 가능할 듯 보인다.
