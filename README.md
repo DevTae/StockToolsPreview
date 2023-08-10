@@ -137,7 +137,7 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 ![stock-analysis-archive](https://user-images.githubusercontent.com/55177359/222942273-c536fc6c-b441-4672-9667-41a61b0d4110.png)
 
 - Moreover, I tried to analyze the stock price using `Deep Learning Model`.
-- You could see on [this link](https://github.com/DevTae/StockDatabasePreview/blob/main/StockPricePrediction.md)
+  - You could see on [this link](https://github.com/DevTae/StockDatabasePreview/blob/main/StockPricePrediction.md)
 
 <br/>
 
