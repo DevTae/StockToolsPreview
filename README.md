@@ -8,8 +8,8 @@ This is the repository that summarizes about my own project named 'DevTae/StockD
 - Overview
   - [Saving about `2367 stocks` and `9,952,847 daily datas` in File-System database](#saving-about-2367-stocks-and-9952847-daily-datas-in-file-system-database)
   - [Adopting `the asynchronous method` on loading stock datas from Kiwoom OpenAPI and Naver Finance](#adopting-the-asynchronous-method-on-loading-stock-datas-from-kiwoom-openapi-and-naver-finance)
-  - [`Saving of 72% previous processing time` in calculating indicator named `Leading Span of Ichimoku` about `a data set of 10 million`](#saving-of-72-previous-processing-time-in-calculating-leading-span-of-ichimoku-about-a-data-set-of-10-million)
-  - [Using these backtesting datas **to make own buying/selling strategy**](#using-these-backtesting-datas-to-make-own-buyingselling-strategy)
+  - [`Saving of 72% previous processing time` in calculating indicator named `Leading Span of Ichimoku` about `a data set of 10 million`](#saving-of-72-previous-processing-time-in-calculating-indicator-named-leading-span-of-ichimoku-about-a-data-set-of-10-million)
+  - [Using these `backtesting datas` **to make own buying/selling strategy**](#using-these-backtesting-datas-to-make-own-buyingselling-strategy)
 
 - [Features in 'StockDatabase' Project](#features-in-stockdatabase-project)
 
@@ -97,7 +97,7 @@ This is the repository that summarizes about my own project named 'DevTae/StockD
 
 <br/>
 
-### `Saving of 72% previous processing time` in calculating Leading Span of Ichimoku about `a data set of 10 million`
+### `Saving of 72% previous processing time` in calculating indicator named `Leading Span of Ichimoku` about `a data set of 10 million`
 
 There are two ways to get the Maximum and Minimum Value in Specific Range to calculate the Leading Span of Ichimoku *(n : a number of all daily datas contained every stocks)*
 
@@ -128,7 +128,7 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 -----
 
-### Using these backtesting datas **to make own buying/selling strategy**
+### Using these `backtesting datas` **to make own buying/selling strategy**
 
 - It could be totally possible to **analyze the price patterns of stock** using this program with backtesting results.
 
