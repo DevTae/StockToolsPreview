@@ -1,17 +1,25 @@
-# StockDatabasePreview
+# StockToolsPreview
 -----
 
 *Made by DevTae*
 
-This is the repository that summarizes about my own project named 'DevTae/StockDatabase'
+This is the repository that summarizes about my own project named 'DevTae/StockTools'
 
-- Overview
+- Features
+  - File-System Database
+    - Downloading Adjusted Price Datas
+    - Calculating Many Indicators
+    - Auto Update Helper Tool
+  - Backtesting Applied Strategies
+  - Auto Trading Bot
+
+- Contents
   - [Saving about `2367 stocks` and `9,952,847 daily datas` in File-System database](#saving-about-2367-stocks-and-9952847-daily-datas-in-file-system-database)
   - [Adopting `the asynchronous method` on loading stock datas from Kiwoom OpenAPI and Naver Finance](#adopting-the-asynchronous-method-on-loading-stock-datas-from-kiwoom-openapi-and-naver-finance)
   - [`Saving of 72% previous processing time` in calculating indicator named `Leading Span of Ichimoku` about `a data set of 10 million`](#saving-of-72-previous-processing-time-in-calculating-indicator-named-leading-span-of-ichimoku-about-a-data-set-of-10-million)
   - [Using these `backtesting datas` **to make own buying/selling strategy**](#using-these-backtesting-datas-to-make-own-buyingselling-strategy)
 
-- [Features in 'StockDatabase' Project](#features-in-stockdatabase-project)
+- [Features in 'StockDatabase' and 'StockBacktester' Project](#features-in-stockdatabase-and-stockbacktester-project)
 
   
 
@@ -143,7 +151,7 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 -----
 
-## Features in 'StockDatabase' Project
+## Features in 'StockDatabase' and 'StockBacktester' Project
 
 - Update the daily datas automatically *from Kiwoom API and Naver Finance*
 
