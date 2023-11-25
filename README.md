@@ -5,23 +5,23 @@
 
 This is the repository that summarizes about my own project named 'DevTae/StockTools'
 
-- Features
-  - File-System Database
+- Projects
+  - `StockDatabase`, `StockDatabaseHelper`
+    - File-System Database
     - Downloading Adjusted Price Datas
     - Calculating Many Indicators
     - Auto Update Helper Tool
-  - Backtesting Applied Strategies
-  - Auto Trading Bot
+  - `StockBacktester`
+    - Backtesting Applied Strategies
+    - Calculating statistical datas
+  - `AutoTradingBot`
 
 - Contents
   - [Saving about `2367 stocks` and `9,952,847 daily datas` in File-System database](#saving-about-2367-stocks-and-9952847-daily-datas-in-file-system-database)
   - [Adopting `the asynchronous method` on loading stock datas from Kiwoom OpenAPI and Naver Finance](#adopting-the-asynchronous-method-on-loading-stock-datas-from-kiwoom-openapi-and-naver-finance)
   - [`Saving of 72% previous processing time` in calculating indicator named `Leading Span of Ichimoku` about `a data set of 10 million`](#saving-of-72-previous-processing-time-in-calculating-indicator-named-leading-span-of-ichimoku-about-a-data-set-of-10-million)
   - [Using these `backtesting datas` **to make own buying/selling strategy**](#using-these-backtesting-datas-to-make-own-buyingselling-strategy)
-
-- [Features in 'StockDatabase' and 'StockBacktester' Project](#features-in-stockdatabase-and-stockbacktester-project)
-
-  
+  - [Features in 'StockDatabase' and 'StockBacktester' Project](#features-in-stockdatabase-and-stockbacktester-project)
 
 <br/>
 
