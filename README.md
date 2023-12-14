@@ -169,6 +169,8 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 ![viewthechart](https://user-images.githubusercontent.com/55177359/222940379-a8a3c1b3-5ab4-4783-9026-75996ae861fa.gif)
 
+![21 12 28 모아텍 자동패턴분석](https://github.com/DevTae/StockToolsPreview/assets/55177359/0a93f669-c543-4c64-995d-a2375571937b)
+
 <br/>
 
 -----
