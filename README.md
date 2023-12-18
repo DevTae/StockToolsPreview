@@ -9,6 +9,7 @@ This is the repository that summarizes about my own project named `DevTae/StockT
   - `StockDatabase`, `StockDatabaseHelper`
     - File-System Database
     - Downloading Adjusted Price Datas
+    - Downloading Theme, Industry datas
     - Calculating Many Indicators
     - Auto Update Helper Tool
   - `StockBacktester`
