@@ -12,7 +12,7 @@ This is the repository that summarizes about my own project named `DevTae/StockT
     - **Calculating** Many Indicators as like Ichimoku
     - Auto Update Helper Tool
   - `StockBacktester`
-    - **Calculating** Trendlines about Each Stock Chart
+    - **Calculating** Trendlines on Each Stock Chart
     - **Calculating** Statistical Clusters about Theme and Industry
     - **Backtesting** Simple Profitability Ratio Result Using Custom Signal
   - `AutoTradingBot`
