@@ -1,38 +1,66 @@
 # StockToolsPreview
 -----
 
-*Made by DevTae*
+*Made by `DevTae`*
 
 This is the repository that summarizes about my own project named `DevTae/StockTools`
 
-- Features
+- Program Features
   - `StockDatabase`, `StockDatabaseHelper`
     - File-System Database
-    - Downloading Adjusted Price Datas
-    - Downloading Theme, Industry datas
-    - Calculating Many Indicators
+    - **Downloading** Adjusted Price Datas, Theme, Industry datas
+    - **Calculating** Many Indicators as like Ichimoku
     - Auto Update Helper Tool
   - `StockBacktester`
-    - Backtesting Simple Profitability Ratio Result Using Custom Signal
-    - Calculating Statistical Clustering Result about Theme and Industry
+    - **Backtesting** Simple Profitability Ratio Result Using Custom Signal
+    - **Calculating** Statistical Clusters about Theme and Industry
   - `AutoTradingBot`
+  - [Screenshots in 'StockDatabase' and 'StockBacktester' Project](#screenshots-in-stockdatabase-and-stockbacktester-project)
 
-- Contents
+- Technical Contents
   - [`StockDatabase` Project](#stockdatabase-project)
     - [Saving about `2367 stocks` and `9,952,847 daily datas` in File-System database](#saving-about-2367-stocks-and-9952847-daily-datas-in-file-system-database)
     - [Adopting `the asynchronous method` on loading stock datas from Kiwoom OpenAPI and Naver Finance](#adopting-the-asynchronous-method-on-loading-stock-datas-from-kiwoom-openapi-and-naver-finance)
     - [`Saving of 72% previous processing time` in calculating indicator named `Leading Span of Ichimoku` about `a data set of 10 million`](#saving-of-72-previous-processing-time-in-calculating-indicator-named-leading-span-of-ichimoku-about-a-data-set-of-10-million)
   - [`StockBacktester` Project](#stockbacktester-project)
     - [Using these `backtesting datas` **to make own buying/selling strategy**](#using-these-backtesting-datas-to-make-own-buyingselling-strategy)
-  - [Features in 'StockDatabase' and 'StockBacktester' Project](#features-in-stockdatabase-and-stockbacktester-project)
+  - [Information about Source Distribution](#information-about-source-distribution)
 
 <br/>
 
 -----
 
-## `StockDatabase` Project
+## Program Features
 
-### Saving about `2367 stocks` and `9,952,847 daily datas` in File-System database
+### Screenshots in 'StockDatabase' and 'StockBacktester' Project
+
+- Update the daily datas automatically `from Kiwoom API and Naver Finance`
+
+![updatedailydata](https://user-images.githubusercontent.com/55177359/222940109-4bb442aa-9ebb-429b-a3f5-9500225dcd30.gif)
+
+<br/>
+
+- Backtesting Simulation with the custom buying/selling strategy as like `Uptrend Signal` (*on the bottom right*) 
+
+![backtest](https://user-images.githubusercontent.com/55177359/222940351-1cef5cac-c554-4c6e-b07d-32591530f29f.gif)
+
+<br/>
+
+- Showing the chart of searched backtesting results with many indicators like `trendlines`, `theme clusters`
+
+![viewthechart](https://user-images.githubusercontent.com/55177359/222940379-a8a3c1b3-5ab4-4783-9026-75996ae861fa.gif)
+
+![21 12 28 모아텍 자동패턴분석](https://github.com/DevTae/StockToolsPreview/assets/55177359/0a93f669-c543-4c64-995d-a2375571937b)
+
+<br/>
+
+-----
+
+## Technical Contents
+
+### `StockDatabase` Project
+
+#### Saving about `2367 stocks` and `9,952,847 daily datas` in File-System database
 
 - I have saved about **a lot of stock datas** in File-System database from Korea market (KOSPI, KOSDAQ) until 2023/02/17.
   - There are so many informations as like `Stock Price`, `Volume`, `Adjusted Stock Price`, `MarketCap` in each daily data.
@@ -79,7 +107,7 @@ This is the repository that summarizes about my own project named `DevTae/StockT
 
 <br/>
 
-### Adopting `the asynchronous method` on loading stock datas from Kiwoom OpenAPI and Naver Finance
+#### Adopting `the asynchronous method` on loading stock datas from Kiwoom OpenAPI and Naver Finance
 
 - The program downloads many datas `using asynchronous function` because of the **download limit in Kiwoom OpenAPI**.
 
@@ -93,7 +121,7 @@ This is the repository that summarizes about my own project named `DevTae/StockT
 
 <br/>
 
-### `Saving of 72% previous processing time` in calculating indicator named `Leading Span of Ichimoku` about `a data set of 10 million`
+#### `Saving of 72% previous processing time` in calculating indicator named `Leading Span of Ichimoku` about `a data set of 10 million`
 
 There are two ways to get the Maximum and Minimum Value in Specific Range to calculate the Leading Span of Ichimoku *(n : a number of all daily datas contained every stocks)*
 
@@ -124,9 +152,9 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 -----
 
-## `StockBacktester` Project
+### `StockBacktester` Project
 
-### Using these `backtesting datas` **to make own buying/selling strategy**
+#### Using these `backtesting datas` **to make own buying/selling strategy**
 
 - It could be totally possible to **analyze the price patterns of stock** using this program with backtesting results.
   - Until now, I have studied and analyzed so many stocks and price patterns using this program
@@ -134,30 +162,6 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
     - You could see on [this link](https://github.com/DevTae/StockPricePredictionPreview)
 
 ![stock-analysis-archive](https://user-images.githubusercontent.com/55177359/222942273-c536fc6c-b441-4672-9667-41a61b0d4110.png)
-
-<br/>
-
------
-
-## Features in 'StockDatabase' and 'StockBacktester' Project
-
-- Update the daily datas automatically *from Kiwoom API and Naver Finance*
-
-![updatedailydata](https://user-images.githubusercontent.com/55177359/222940109-4bb442aa-9ebb-429b-a3f5-9500225dcd30.gif)
-
-<br/>
-
-- Backtesting Simulation with the custom buying/selling strategy as like `Uptrend Signal` (*on the bottom right*) 
-
-![backtest](https://user-images.githubusercontent.com/55177359/222940351-1cef5cac-c554-4c6e-b07d-32591530f29f.gif)
-
-<br/>
-
-- Showing the chart of searched backtesting results with many indicators like trendline, theme, and so on
-
-![viewthechart](https://user-images.githubusercontent.com/55177359/222940379-a8a3c1b3-5ab4-4783-9026-75996ae861fa.gif)
-
-![21 12 28 모아텍 자동패턴분석](https://github.com/DevTae/StockToolsPreview/assets/55177359/0a93f669-c543-4c64-995d-a2375571937b)
 
 <br/>
 
