@@ -9,11 +9,12 @@ This is the repository that summarizes about my own project named `DevTae/StockT
   - `StockDatabase`, `StockDatabaseHelper`
     - File-System Database
     - **Downloading** Adjusted Price Datas, Theme, Industry datas
-    - **Calculating** Many Indicators as like Trendline
+    - **Calculating** Many Indicators as like Ichimoku
     - Auto Update Helper Tool
   - `StockBacktester`
-    - **Backtesting** Simple Profitability Ratio Result Using Custom Signal
+    - **Calculating** Trendlines about Each Stock Chart
     - **Calculating** Statistical Clusters about Theme and Industry
+    - **Backtesting** Simple Profitability Ratio Result Using Custom Signal
   - `AutoTradingBot`
   - [Screenshots in 'StockDatabase' and 'StockBacktester' Project](#screenshots-in-stockdatabase-and-stockbacktester-project)
 
