@@ -118,7 +118,7 @@ This is the repository that summarizes about my own project named `DevTae/StockT
   
   - Finally, I decided to use **both Kiwoom API and Naver Finance** to `improve the loading speed` and `get the information of the adjusting stock price event`
 
-- You could see the running program briefly how to process [at bottom pictures](#features-in-stockdatabase-and-stockbacktester-project)\
+- You could see the running program briefly how to process [at bottom pictures](#features-in-stockdatabase-and-stockbacktester-project)
 
 <br/>
 
