@@ -5,7 +5,7 @@
 
 This is the repository that summarizes about my own project named `DevTae/StockTools`
 
-- Projects
+- Features
   - `StockDatabase`, `StockDatabaseHelper`
     - File-System Database
     - Downloading Adjusted Price Datas
@@ -13,28 +13,31 @@ This is the repository that summarizes about my own project named `DevTae/StockT
     - Calculating Many Indicators
     - Auto Update Helper Tool
   - `StockBacktester`
-    - Backtesting Applied Strategies
-    - Calculating Statistical Result
+    - Backtesting Simple Profitability Ratio Result Using Custom Signal
+    - Calculating Statistical Clustering Result about Theme and Industry
   - `AutoTradingBot`
 
 - Contents
-  - [Saving about `2367 stocks` and `9,952,847 daily datas` in File-System database](#saving-about-2367-stocks-and-9952847-daily-datas-in-file-system-database)
-  - [Adopting `the asynchronous method` on loading stock datas from Kiwoom OpenAPI and Naver Finance](#adopting-the-asynchronous-method-on-loading-stock-datas-from-kiwoom-openapi-and-naver-finance)
-  - [`Saving of 72% previous processing time` in calculating indicator named `Leading Span of Ichimoku` about `a data set of 10 million`](#saving-of-72-previous-processing-time-in-calculating-indicator-named-leading-span-of-ichimoku-about-a-data-set-of-10-million)
-  - [Using these `backtesting datas` **to make own buying/selling strategy**](#using-these-backtesting-datas-to-make-own-buyingselling-strategy)
+  - [`StockDatabase` Project](#stockdatabase-project)
+    - [Saving about `2367 stocks` and `9,952,847 daily datas` in File-System database](#saving-about-2367-stocks-and-9952847-daily-datas-in-file-system-database)
+    - [Adopting `the asynchronous method` on loading stock datas from Kiwoom OpenAPI and Naver Finance](#adopting-the-asynchronous-method-on-loading-stock-datas-from-kiwoom-openapi-and-naver-finance)
+    - [`Saving of 72% previous processing time` in calculating indicator named `Leading Span of Ichimoku` about `a data set of 10 million`](#saving-of-72-previous-processing-time-in-calculating-indicator-named-leading-span-of-ichimoku-about-a-data-set-of-10-million)
+  - [`StockBacktester` Project](#stockbacktester-project)
+    - [Using these `backtesting datas` **to make own buying/selling strategy**](#using-these-backtesting-datas-to-make-own-buyingselling-strategy)
   - [Features in 'StockDatabase' and 'StockBacktester' Project](#features-in-stockdatabase-and-stockbacktester-project)
 
 <br/>
 
 -----
 
+## `StockDatabase` Project
+
 ### Saving about `2367 stocks` and `9,952,847 daily datas` in File-System database
 
-- First, I have saved about **a lot of stock datas** in File-System database from Korea market (KOSPI, KOSDAQ) on 2023/02/17.
-
-- There are so many informations as like `Stock Price`, `Volume`, `Adjusted Stock Price`, `MarketCap` in only one daily data.
-
-- Below this, that is the structure of my class files.
+- I have saved about **a lot of stock datas** in File-System database from Korea market (KOSPI, KOSDAQ) until 2023/02/17.
+  - There are so many informations as like `Stock Price`, `Volume`, `Adjusted Stock Price`, `MarketCap` in each daily data.
+  - Below this, that is the structure of `class diagram`.
+  - Example code is [here](https://github.com/DevTae/StockDatabasePreview/blob/main/DownloadDailyDatas.md)
 
 ```
 📦Stock
@@ -72,25 +75,13 @@ This is the repository that summarizes about my own project named `DevTae/StockT
  ┗ 📜LastAdjustedIndex     // 마지막 수정주가 변동 index
 ```
 
-<br/>
-
-- This is the overview of class files and file-system database
-
 ![preview2](https://user-images.githubusercontent.com/55177359/211186525-b162f5e3-0e1a-40c0-af47-057d6e3afd78.png)
-
-<br/>
-
-- Example code is [here](https://github.com/DevTae/StockDatabasePreview/blob/main/DownloadDailyDatas.md)
-
-<br/>
-
------
 
 <br/>
 
 ### Adopting `the asynchronous method` on loading stock datas from Kiwoom OpenAPI and Naver Finance
 
-- I make it to download datas `using asynchronous function` because of the download limit in Kiwoom OpenAPI.
+- The program downloads many datas `using asynchronous function` because of the **download limit in Kiwoom OpenAPI**.
 
   - **Calling Kiwoom API** could download the data of the `adjusting stock price event`, however, there is API limit rule that could download `only 1000 times in 1 hour` *(too slow)*
   
@@ -98,11 +89,7 @@ This is the repository that summarizes about my own project named `DevTae/StockT
   
   - Finally, I decided to use **both Kiwoom API and Naver Finance** to `improve the loading speed` and `get the information of the adjusting stock price event`
 
-- You could see the running program briefly how to process [at bottom pictures](#features-in-stockdatabase-and-stockbacktester-project)
-
-<br/>
-
------
+- You could see the running program briefly how to process [at bottom pictures](#features-in-stockdatabase-and-stockbacktester-project)\
 
 <br/>
 
@@ -137,16 +124,16 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 -----
 
+## `StockBacktester` Project
+
 ### Using these `backtesting datas` **to make own buying/selling strategy**
 
 - It could be totally possible to **analyze the price patterns of stock** using this program with backtesting results.
-
-- Until now, I have studied and analyzed so many stocks and price patterns using this program
+  - Until now, I have studied and analyzed so many stocks and price patterns using this program
+  - Moreover, I tried to analyze the stock price using `Deep Learning Model`.
+    - You could see on [this link](https://github.com/DevTae/StockPricePredictionPreview)
 
 ![stock-analysis-archive](https://user-images.githubusercontent.com/55177359/222942273-c536fc6c-b441-4672-9667-41a61b0d4110.png)
-
-- Moreover, I tried to analyze the stock price using `Deep Learning Model`.
-  - You could see on [this link](https://github.com/DevTae/StockPricePredictionPreview)
 
 <br/>
 
@@ -166,7 +153,7 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 <br/>
 
-- Showing the chart of searched backtesting results with many indicators like trendline
+- Showing the chart of searched backtesting results with many indicators like trendline, theme, and so on
 
 ![viewthechart](https://user-images.githubusercontent.com/55177359/222940379-a8a3c1b3-5ab4-4783-9026-75996ae861fa.gif)
 
