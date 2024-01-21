@@ -21,11 +21,12 @@ This is the repository that summarizes about my own project named `DevTae/StockT
 - Technical Contents
   - [`StockDatabase` Project](#stockdatabase-project)
     - [Saving about `2367 stocks` and `9,952,847 daily datas` in File-System database](#saving-about-2367-stocks-and-9952847-daily-datas-in-file-system-database)
-    - [Adopting `the asynchronous method` on loading stock datas from Kiwoom OpenAPI and Naver Finance](#adopting-the-asynchronous-method-on-loading-stock-datas-from-kiwoom-openapi-and-naver-finance)
     - [`Saving of 72% previous processing time` in calculating indicator named `Leading Span of Ichimoku` about `a data set of 10 million`](#saving-of-72-previous-processing-time-in-calculating-indicator-named-leading-span-of-ichimoku-about-a-data-set-of-10-million)
   - [`StockBacktester` Project](#stockbacktester-project)
     - [Using these `backtesting datas` **to make own buying/selling strategy**](#using-these-backtesting-datas-to-make-own-buyingselling-strategy)
   - [Information about Source Distribution](#information-about-source-distribution)
+
+<!--    - [Adopting `the asynchronous method` on loading stock datas from Kiwoom OpenAPI and Naver Finance](#adopting-the-asynchronous-method-on-loading-stock-datas-from-kiwoom-openapi-and-naver-finance) -->
 
 <br/>
 
@@ -108,6 +109,7 @@ This is the repository that summarizes about my own project named `DevTae/StockT
 
 <br/>
 
+<!--
 #### Adopting `the asynchronous method` on loading stock datas from Kiwoom OpenAPI and Naver Finance
 
 - The program downloads many datas `using asynchronous function` because of the **download limit in Kiwoom OpenAPI**.
@@ -121,6 +123,7 @@ This is the repository that summarizes about my own project named `DevTae/StockT
 - You could see the running program briefly how to process [at bottom pictures](#features-in-stockdatabase-and-stockbacktester-project)
 
 <br/>
+-->
 
 #### `Saving of 72% previous processing time` in calculating indicator named `Leading Span of Ichimoku` about `a data set of 10 million`
 
