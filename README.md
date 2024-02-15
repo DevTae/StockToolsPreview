@@ -10,12 +10,15 @@ This is the repository that summarizes about my own project named `DevTae/StockT
     - File-System Database
     - **Downloading** Adjusted Price Datas, Theme, Industry datas
     - **Calculating** Many Indicators as like Ichimoku
-    - Auto Update Helper Tool
+    - **Monitoring** Stock Price using some awesome Condition of Applied Strategy
+    - **Auto Update** Helper Tool
   - `StockBacktester`
     - **Calculating** Trendlines on Each Stock Chart
     - **Calculating** Statistical Clusters about Theme and Industry
     - **Backtesting** Simple Profitability Ratio Result Using Custom Signal
   - `AutoTradingBot`
+    - `Kiwoom OpenAPI` ↔ `AutoTradingBot` : Providing only Buying/Selling Strategy using Interested Stock List
+    - `Kiwoom OpenAPI` ↔ `AutoTradingBot` ↔ `StockDatabase` : Providing Buying/Selling Strategy using the **Monitoring Stock Price Feature**
   - [Screenshots in 'StockDatabase' and 'StockBacktester' Project](#screenshots-in-stockdatabase-and-stockbacktester-project)
 
 - Technical Contents
@@ -36,13 +39,13 @@ This is the repository that summarizes about my own project named `DevTae/StockT
 
 ### Screenshots in 'StockDatabase' and 'StockBacktester' Project
 
-- Update the daily datas automatically `from Kiwoom API and Naver Finance`
+- Update the daily datas automatically `from Kiwoom API and Naver Finance` in asynchronous way
 
 ![updatedailydata](https://user-images.githubusercontent.com/55177359/222940109-4bb442aa-9ebb-429b-a3f5-9500225dcd30.gif)
 
 <br/>
 
-- Backtesting Simulation with the custom buying/selling strategy as like `Uptrend Signal` (*on the bottom right*) 
+- Backtesting Simulation with many buying/selling strategy as like `Uptrend Signal` (*on the bottom right*) 
 
 ![backtest](https://user-images.githubusercontent.com/55177359/222940351-1cef5cac-c554-4c6e-b07d-32591530f29f.gif)
 
