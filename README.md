@@ -7,17 +7,15 @@ This is the repository that summarizes about my own project named `DevTae/StockT
 
 - Program Features
   - `StockDatabase`, `StockDatabaseHelper`
-    - File-System Database
+    - **Constructing** File-System Database
     - **Downloading** Adjusted Price Datas, Theme, Industry datas
-    - **Calculating** Many Indicators as like Ichimoku
+    - **Calculating** Many Price Indicators as like Ichimoku
     - **Auto Update** Helper Tool
   - `StockBacktester`
+    - **Searching** stocks using specific functions with conditions
+    - **Backtesting** Simple Profitability Ratio Result Using Custom Signal
     - **Calculating** Trendlines on Each Stock Chart
     - **Calculating** Statistical Clusters about Theme and Industry
-    - **Backtesting** Simple Profitability Ratio Result Using Custom Signal
-  - `AutoTradingBot`
-    - `Kiwoom OpenAPI` ↔ `AutoTradingBot` : Providing only simple Buying/Selling Strategy using Interested Stock List
-    - `Kiwoom OpenAPI` ↔ `AutoTradingBot` ↔ `StockDatabase` : Providing Buying/Selling Strategy using the **Monitoring Theme Informations and Previous Stock Prices**
   - [Screenshots in 'StockDatabase' and 'StockBacktester' Project](#screenshots-in-stockdatabase-and-stockbacktester-project)
 
 - Technical Contents
