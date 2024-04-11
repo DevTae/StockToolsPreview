@@ -5,7 +5,7 @@
 
 This is the repository that summarizes about my own project named `DevTae/StockTools`
 
-- Program Features
+- Project Overview
   - `StockDatabase`, `StockDatabaseHelper`
     - **Constructing** File-System Database
     - **Downloading** Adjusted Price Datas, Theme, Industry datas
@@ -16,7 +16,6 @@ This is the repository that summarizes about my own project named `DevTae/StockT
     - **Backtesting** Simple Profitability Ratio Result Using Custom Signal
     - **Calculating** Trendlines on Each Stock Chart
     - **Calculating** Statistical Clusters about Theme and Industry
-  - [Screenshots in 'StockDatabase' and 'StockBacktester' Project](#screenshots-in-stockdatabase-and-stockbacktester-project)
 
 - Technical Contents
   - [`StockDatabase` Project](#stockdatabase-project)
@@ -25,35 +24,12 @@ This is the repository that summarizes about my own project named `DevTae/StockT
   - [`StockBacktester` Project](#stockbacktester-project)
     - [Using `Delegate Pattern` on **Searching Stocks using Conditional Functions**](#using-delegate-pattern-on-searching-stocks-using-conditional-functions)
     - [Using these `backtesting datas` **to make own buying/selling strategy**](#using-these-backtesting-datas-to-make-own-buyingselling-strategy)
-  - [Information about Source Distribution](#information-about-source-distribution)
+
+- [Screenshots in 'StockDatabase' and 'StockBacktester' Project](#screenshots-in-stockdatabase-and-stockbacktester-project)
+
+- [Information about Source Distribution](#information-about-source-distribution)
 
 <!--    - [Adopting `the asynchronous method` on loading stock datas from Kiwoom OpenAPI and Naver Finance](#adopting-the-asynchronous-method-on-loading-stock-datas-from-kiwoom-openapi-and-naver-finance) -->
-
-<br/>
-
------
-
-## Program Features
-
-### Screenshots in 'StockDatabase' and 'StockBacktester' Project
-
-- Update the daily datas automatically `from Kiwoom API and Naver Finance` in asynchronous way
-
-![updatedailydata](https://user-images.githubusercontent.com/55177359/222940109-4bb442aa-9ebb-429b-a3f5-9500225dcd30.gif)
-
-<br/>
-
-- Backtesting Simulation with many buying/selling strategy as like `SMA Golden-Cross Signal` (*on the bottom right*) 
-
-![backtest](https://user-images.githubusercontent.com/55177359/222940351-1cef5cac-c554-4c6e-b07d-32591530f29f.gif)
-
-<br/>
-
-- Showing the chart of searched backtesting results with many indicators like `trendlines`, `theme clusters`
-
-![viewthechart](https://user-images.githubusercontent.com/55177359/222940379-a8a3c1b3-5ab4-4783-9026-75996ae861fa.gif)
-
-![21 12 28 모아텍 자동패턴분석](https://github.com/DevTae/StockToolsPreview/assets/55177359/0a93f669-c543-4c64-995d-a2375571937b)
 
 <br/>
 
@@ -214,7 +190,31 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 -----
 
-### Information about Source Distribution
+## Screenshots in 'StockDatabase' and 'StockBacktester' Project
+
+- Update the daily datas automatically `from Kiwoom API and Naver Finance` in asynchronous way
+
+![updatedailydata](https://user-images.githubusercontent.com/55177359/222940109-4bb442aa-9ebb-429b-a3f5-9500225dcd30.gif)
+
+<br/>
+
+- Backtesting Simulation with many buying/selling strategy as like `SMA Golden-Cross Signal` (*on the bottom right*) 
+
+![backtest](https://user-images.githubusercontent.com/55177359/222940351-1cef5cac-c554-4c6e-b07d-32591530f29f.gif)
+
+<br/>
+
+- Showing the chart of searched backtesting results with many indicators like `trendlines`, `theme clusters`
+
+![viewthechart](https://user-images.githubusercontent.com/55177359/222940379-a8a3c1b3-5ab4-4783-9026-75996ae861fa.gif)
+
+![21 12 28 모아텍 자동패턴분석](https://github.com/DevTae/StockToolsPreview/assets/55177359/0a93f669-c543-4c64-995d-a2375571937b)
+
+<br/>
+
+-----
+
+## Information about Source Distribution
 
 - The source code of this project is saved on private repository, because **I worried about the misusing some strategies in this project to their buying / selling decision**.
 
@@ -225,7 +225,7 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 
 -----
 
-### The End
+## The End
 
 Thank you for reading!
 
