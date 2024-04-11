@@ -10,7 +10,6 @@ This is the repository that summarizes about my own project named `DevTae/StockT
     - File-System Database
     - **Downloading** Adjusted Price Datas, Theme, Industry datas
     - **Calculating** Many Indicators as like Ichimoku
-    - **Monitoring** Some Themes using some awesome Condition of Applied Strategy (ex. Semi Conductor, Crypto Currency, and so on..)
     - **Auto Update** Helper Tool
   - `StockBacktester`
     - **Calculating** Trendlines on Each Stock Chart
@@ -26,6 +25,7 @@ This is the repository that summarizes about my own project named `DevTae/StockT
     - [Saving about `2367 stocks` and `9,952,847 daily datas` in File-System database](#saving-about-2367-stocks-and-9952847-daily-datas-in-file-system-database)
     - [`Saving of 72% previous processing time` in calculating indicator named `Leading Span of Ichimoku` about `a data set of 10 million`](#saving-of-72-previous-processing-time-in-calculating-indicator-named-leading-span-of-ichimoku-about-a-data-set-of-10-million)
   - [`StockBacktester` Project](#stockbacktester-project)
+    - [Using `Delegate Pattern` on **Searching Stocks using Conditional Functions**](#using-delegate-pattern-on-searching-stocks-using-conditional-functions)
     - [Using these `backtesting datas` **to make own buying/selling strategy**](#using-these-backtesting-datas-to-make-own-buyingselling-strategy)
   - [Information about Source Distribution](#information-about-source-distribution)
 
@@ -45,7 +45,7 @@ This is the repository that summarizes about my own project named `DevTae/StockT
 
 <br/>
 
-- Backtesting Simulation with many buying/selling strategy as like `Uptrend Signal` (*on the bottom right*) 
+- Backtesting Simulation with many buying/selling strategy as like `SMA Golden-Cross Signal` (*on the bottom right*) 
 
 ![backtest](https://user-images.githubusercontent.com/55177359/222940351-1cef5cac-c554-4c6e-b07d-32591530f29f.gif)
 
@@ -160,6 +160,49 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 -----
 
 ### `StockBacktester` Project
+
+#### Using `Delegate Pattern` on **Searching Stocks using Conditional Functions**
+- Below codes are the example of searching condition function
+  ```csharp
+  // it will return true, when "20 SMA crosses up 60 SMA" using simple moving average "while remaining convergence"
+  public static bool IsCrossUpCandle(ref DailyData[] dailyDatas, ref Indicator[] indicators, int start_index, int index)
+  {
+  	if(index <= 0) return false;
+  
+  	if(index - start_index < 5) return false;
+  
+  	// 1. 20 SMA < 60 SMA * 1.05
+  	float SMA20, SMA60;
+  	if(float.TryParse(indicators[index].Values[(int)IndicatorDailyCode.SMA20], out SMA20)
+  	&& float.TryParse(indicators[index].Values[(int)IndicatorDailyCode.SMA60], out SMA60)) {
+		  if(SMA20 < SMA60 * 1.05) {
+  			// 2. pivot close CrossUp
+			  float close_p = float.Parse(dailyDatas[start_index].AdjustedClose);
+			  float close_0 = float.Parse(dailyDatas[index].AdjustedClose);
+			  float close_1 = float.Parse(dailyDatas[index - 1].AdjustedClose);
+			  if(close_0 > close_p && close_1 < close_p) {
+  				return true;
+			  }
+		  }
+	  }
+  
+  	return false;
+  }
+  ```
+  
+- I used `delegate variable` **for reducing code complexity** when I needed to use a lot of conditional functions.
+  ```csharp
+  public delegate bool CondFunc(ref DailyData[] dailyDatas, ref Indicator[] indicators, int point_index2, int index);
+  ...
+  // select condFunc using switch operation and so on
+  CondFunc condFunc = IsCrossUpCandle;
+  ...
+  // get daily datas and indicator of stocks
+  bool result = this.condFunc(ref dailyDatas, ref indicators, 5, 0);
+  ...
+  // search and analyze results ...
+  ...
+  ```
 
 #### Using these `backtesting datas` **to make own buying/selling strategy**
 
