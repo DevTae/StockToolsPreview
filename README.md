@@ -160,7 +160,7 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
 ### `StockBacktester` Project
 
 #### Using `Delegate Pattern` on **Searching Stocks using Conditional Functions**
-- Below codes are the example of searching condition function
+- Below codes are the examples of searching condition function
   ```csharp
   // it will return true, when "20 SMA crosses up 60 SMA" using simple moving average "while remaining convergence"
   public static bool IsCrossUpCandle(ref DailyData[] dailyDatas, ref Indicator[] indicators, int start_index, int index)
