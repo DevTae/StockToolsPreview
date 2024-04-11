@@ -167,26 +167,25 @@ As a result, I made a `saving of 72% previous processing time` about `a data set
   // it will return true, when "20 SMA crosses up 60 SMA" using simple moving average "while remaining convergence"
   public static bool IsCrossUpCandle(ref DailyData[] dailyDatas, ref Indicator[] indicators, int start_index, int index)
   {
-  	if(index <= 0) return false;
+    if(index <= 0) return false;
   
-  	if(index - start_index < 5) return false;
+    if(index - start_index < 5) return false;
   
-  	// 1. 20 SMA < 60 SMA * 1.05
-  	float SMA20, SMA60;
-  	if(float.TryParse(indicators[index].Values[(int)IndicatorDailyCode.SMA20], out SMA20)
-  	&& float.TryParse(indicators[index].Values[(int)IndicatorDailyCode.SMA60], out SMA60)) {
-		  if(SMA20 < SMA60 * 1.05) {
-  			// 2. pivot close CrossUp
-			  float close_p = float.Parse(dailyDatas[start_index].AdjustedClose);
-			  float close_0 = float.Parse(dailyDatas[index].AdjustedClose);
-			  float close_1 = float.Parse(dailyDatas[index - 1].AdjustedClose);
-			  if(close_0 > close_p && close_1 < close_p) {
-  				return true;
-			  }
-		  }
-	  }
-  
-  	return false;
+    // 1. 20 SMA < 60 SMA * 1.05
+    float SMA20, SMA60;
+    if(float.TryParse(indicators[index].Values[(int)IndicatorDailyCode.SMA20], out SMA20)
+    && float.TryParse(indicators[index].Values[(int)IndicatorDailyCode.SMA60], out SMA60)) {
+      if(SMA20 < SMA60 * 1.05) {
+        // 2. pivot close CrossUp
+        float close_p = float.Parse(dailyDatas[start_index].AdjustedClose);
+        float close_0 = float.Parse(dailyDatas[index].AdjustedClose);
+        float close_1 = float.Parse(dailyDatas[index - 1].AdjustedClose);
+        if(close_0 > close_p && close_1 < close_p) {
+          return true;
+        }
+      }
+    }
+    return false;
   }
   ```
   
