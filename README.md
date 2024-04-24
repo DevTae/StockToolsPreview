@@ -16,6 +16,10 @@ This is the repository that summarizes about my own project named `DevTae/StockT
     - **Backtesting** Simple Profitability Ratio Result Using Custom Signal
     - **Calculating** Trendlines on Each Stock Chart
     - **Calculating** Statistical Clusters about Theme and Industry
+  - `StockSearcher`, `AutoTradingBot`
+    - After the validation process of conditions, that conditions are applied on StockSearcher logic
+    - The user could find the attractive stocks, and register them on AutoTradingBot
+    - AutoTradingBot is used to buy registered stocks in cheap price using indicators
 
 - Technical Contents
   - [`StockDatabase` Project](#stockdatabase-project)
